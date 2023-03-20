@@ -6,22 +6,42 @@
 }
 .container {
     background-color: brown;
+    height: 6vh;
+    display: flex;
 
 }
 .logo{
-display: inline-block;
 font-size: 2rem;
+background-color: blanchedalmond;
+border-radius: 7%;
+padding-top: 7px;
 }
 
 .nav {  
     right: 0;  
-    display: inline-block;
-    position: absolute;
+
+    justify-content: flex-end;
     padding-top: 7px;
 }
 .nav li{
     background-color: paleturquoise;
     font-size: 2rem;
     border-radius: 7%;
-    display: inline-block;
+
+}
+aside, section {
+
+    height: 80vh;
+}
+aside {
+    width: 20vw;
+    background-color: pink;
+}
+aside article {
+    background-color: aqua ;
+    border-radius: 7%;
+}
+section {
+    background-color: aquamarine;
+
 }

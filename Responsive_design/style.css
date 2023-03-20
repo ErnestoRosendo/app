@@ -1,0 +1,10 @@
+div {
+    background-color: aqua;
+}
+@media (min-width:300px) {
+    div{
+        background-color: red;
+    }
+}
+/* con el min: Esto indica que apartir de 300px el div tomara un color rojo
+Con el max funciona asi: hasta que tenga el valor de 300px tomara el color rojo, osea que pasados esos 300px el color sera aqua */

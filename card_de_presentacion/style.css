@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.card{
+    width: 300px;
+    height: 300px;
+    background-color: lightgreen;
+    border-radius: 20px;
+    overflow: hidden;
+    /* overflox hace que todo lo que se salga del elemento se elimine o oculte */
+    /* Tiene que aplicarsele al elemento contenedor */
+}
+.card img {
+    width: 100%;
+    height: 85%;
+}
+.card p{
+    text-align: center;
+}
+.card p:nth-child(3){
+    color: lightseagreen;
+}

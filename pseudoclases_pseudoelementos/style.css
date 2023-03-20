@@ -1,0 +1,27 @@
+p {
+    color: aqua;
+}
+/* Selecciona especificamente al elemento hijo numero 3 */
+div p:nth-child(3){
+    color: blueviolet;
+}
+/* Selecciona a la primer letra y le da un estilo especifico  */
+p::first-letter{
+    color: teal;
+}
+/* Cuando el cursos esta encima del elemento le da otro color */
+/* p:hover {
+    color: fuchsia;
+} */
+/* Agrega esto despues de cada elemento */
+p:hover::before{
+    content: "🤳";
+}
+/* Agrega esto antes de cada elemento */
+p::before{
+    content: "❤";
+}
+/* Le da otro color al placeholder del input */
+::placeholder{
+    color: blueviolet;
+}

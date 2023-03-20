@@ -1,0 +1,31 @@
+/* z-index es una propiedad que solo funciona con ciertos tipos de position, es un concepto de apilacion de capas */
+div {
+    position: absolute;
+    background-color: cyan;
+}
+.one{
+    z-index: 5;
+}
+.two{
+    z-index: 4;
+}
+/* z-index permite acomodar las capas en base a la relevancia, la primer capa sera 1 y apartir de ahi las siguientes capas se iran sobreponiendo a ella */
+.red{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    z-index: 5;
+}
+.blue{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    z-index: 4;
+}
+.yellow{
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    z-index: 6;
+}
+/* SI UN ELEMENTO HIJO SE LE QUIERE SOBREPONER A UN ELEMENTO TIO (HERMANO DE SU PADRE) NO SE PODRA POR MAS Z-INDEX QUE AGREGUEMOS */
